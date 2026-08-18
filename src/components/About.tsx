@@ -18,7 +18,7 @@ const About = () => {
               <div className="absolute inset-0 bg-primary/30 blur-3xl rounded-full scale-75" />
               <div className="glass-card w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden relative border-2 border-primary/30 glow-box">
                 <img
-  src="/profile.jpg"
+  src={`${import.meta.env.BASE_URL}profile.jpg`}
   alt="My Profile Picture"
   className="w-full h-full object-cover"
 />

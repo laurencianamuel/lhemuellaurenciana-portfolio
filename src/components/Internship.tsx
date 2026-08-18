@@ -628,7 +628,7 @@ useEffect(() => {
           <div className="flex flex-col gap-6 md:flex-row md:gap-8 md:items-start">
            <div className="w-20 h-20 rounded-xl overflow-hidden bg-white/5 flex items-center justify-center p-2 sm:w-24 sm:h-24">
   <img
-    src="/ITI.png"
+    src={`${import.meta.env.BASE_URL}ITI.png`}
     alt="Intellismart Technology Inc"
     className="w-full h-full object-contain"
   />
