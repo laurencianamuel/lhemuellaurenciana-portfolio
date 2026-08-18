@@ -47,9 +47,7 @@ const About = () => {
                 <Button
                   variant="outline"
                   className="group w-full sm:w-auto"
-                  onClick={() => {
-                    window.location.href = RESUME_URL;
-                  }}
+                  onClick={() => window.open(RESUME_URL, '_blank', 'noopener,noreferrer')}
                 >
                   <Eye className="w-4 h-4 group-hover:animate-bounce" />
                   View Resume
@@ -57,7 +55,7 @@ const About = () => {
 
                 <div className="flex items-center gap-3 w-full sm:w-auto">
                   <Button asChild variant="hero" className="group w-full sm:w-auto">
-                    <a href={RESUME_URL} download="Laurenciana-Lhemuel-Resume.pdf" target="_self">
+                    <a href={RESUME_URL} download="Laurenciana-Lhemuel-Resume.pdf">
                       <Download className="w-4 h-4 group-hover:animate-bounce" />
                       Download Resume
                     </a>
