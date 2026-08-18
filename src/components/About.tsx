@@ -1,7 +1,7 @@
 import { Download, Eye, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
-const RESUME_URL = '/Laurenciana-Lhemuel-Resume.pdf';
+const RESUME_URL = `${import.meta.env.BASE_URL}Laurenciana-Lhemuel-Resume.pdf`;
 
 const About = () => {
   return (

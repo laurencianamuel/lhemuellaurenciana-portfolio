@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path}`;
+
 type Work = {
   title: string;
   description: string;
@@ -15,8 +17,8 @@ const works: Work[] = [
     description: 'Front-end web system project developed for an academic course.',
     details:
       'PageIT is a front-end web system project that I designed and developed as part of my Web System course using HTML, CSS, and basic JavaScript. I focused on creating a structured layout, responsive design, and user-friendly interface. This project helped me strengthen my understanding of core web development concepts such as page structure, styling, and basic interactivity.',
-    image: '/pageit.jpg',
-    video: '/website-pageit.mp4',
+    image: asset('pageit.jpg'),
+    video: asset('website-pageit.mp4'),
     link: 'https://laurencianamuel.github.io/page-it/index.html',
   },
   {
@@ -24,16 +26,16 @@ const works: Work[] = [
     description: 'Music player application development project.',
     details:
       'TuneTwist is a music player web application that I fully designed and developed. I implemented the user interface, audio playback functionality, and responsive layout, ensuring a smooth and user-friendly experience.',
-    image: '/tunetwist.jpg',
-    video: '/website-tunetwist.mp4',
+    image: asset('tunetwist.jpg'),
+    video: asset('website-tunetwist.mp4'),
   },
   {
     title: 'Game Dev | 2D Asset Designer',
     description: '2D game asset design project.',
     details:
       'In this project, I created 2D pixel-art assets using Aseprite, including characters, environment objects, and game elements. I focused on maintaining visual consistency, proper scaling, and animation readiness.',
-    image: '/gdev.png',
-    video: '/website-taptapgodelivery.mp4',
+    image: asset('gdev.png'),
+    video: asset('website-taptapgodelivery.mp4'),
     link: 'https://drive.google.com/file/d/1v8iFoMuzvnSplu8YRHabAnjbmsIRqmUR/view',
   },
 ];
