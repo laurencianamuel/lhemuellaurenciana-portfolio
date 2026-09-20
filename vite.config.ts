@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => ({
     host: "::",
     port: 8080,
   },
-  base: '/lhemuellaurenciana-portfolio/',
+  base: '/portfolio/',
   plugins: [react()].filter(Boolean),
   resolve: {
     alias: {
