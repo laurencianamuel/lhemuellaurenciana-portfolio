@@ -2,7 +2,7 @@ import { Download, Eye, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 // Append a version query to force browsers to fetch the updated PDF when deployed
-const RESUME_URL = `${import.meta.env.BASE_URL}Laurenciana-Lhemuel-Resume.pdf?v=9d7fac4`;
+const RESUME_URL = `${import.meta.env.BASE_URL}Laurenciana-Lhemuel-Resume.pdf?v=last-update`;
 
 const About = () => {
   return (
